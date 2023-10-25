@@ -80,8 +80,8 @@ header + main > section {
 }
 
 
-/* CONCERNS */
-.concerns-list {
+/* CUSTOM LIST */
+.custom-list {
 	border-left: 2px solid #ccc;
 	list-style: none;
 	margin: 0;
@@ -131,6 +131,27 @@ header + main > section {
 	}
 }
 
+
+/* CONCERNS */
+.concerns-list {
+	
+}
+
+
+/* RESROUCES */
+.resources-list {
+	& > li {
+		padding-bottom: 32px;
+		
+		&:last-of-type {
+			padding-bottom: 0;
+		}
+		
+		&::before {
+			top: 1px;
+		}
+	}
+}
 
 @media only screen and (min-width: 320px) and (max-width: 480px) {
 	h1 {
